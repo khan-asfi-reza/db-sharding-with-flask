@@ -44,7 +44,19 @@ docker run --name node3 -p 5434:5432 -e POSTGRES_PASSWORD='postgres' -d mypostgr
 pip install -r requirements.txt
 ```
 
-### 4. Run Flask
+### 5. Create .env File
+Create a .env file
+
+```dotenv
+POSTGRES_HOST=YOUR_HOST_NAME
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+POSTGRES_DATABASE=postgres
+```
+> YOUR_HOST_NAME = Your Local IP4 Address
+
+
+### 5. Run Flask
 ```bash
 run flask
 ```
